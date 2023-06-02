@@ -1,0 +1,29 @@
+.projects {
+
+    &__content {
+        padding: 30px 150px;
+
+        h2 {
+            font-weight: 500;
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12%;
+        row-gap: 55px;
+    }
+
+    &__link {
+        &:hover {
+            filter: drop-shadow(0 0 15px #a1c3cf);
+        }
+    }
+}

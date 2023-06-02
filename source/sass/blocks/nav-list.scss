@@ -1,0 +1,27 @@
+.nav-list {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        margin-right: 30px;
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    &__link {
+        padding: 10px 20px;
+        border-radius: 5%;
+
+        &:focus,
+        &:hover {
+            opacity: 0.8;
+            background-color: rgba(100, 40, 118, 0.7);
+            border: 1px solid rgb(40, 118, 118);
+            padding: 9px 19px;
+        }
+
+        &:active {
+            opacity: 1;
+        }
+    }
+}

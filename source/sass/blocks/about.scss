@@ -1,0 +1,21 @@
+.about {
+    background-color: #1F1E1C;
+
+    &__content {
+        padding: 30px 150px;
+        display: flex;
+    }
+
+    &__image {
+        flex-shrink: 0;
+    }
+
+    &__description {
+        margin-right: 50px;
+
+        h2 {
+            font-weight: 500;
+            font-size: 36px;
+        }
+    }
+}

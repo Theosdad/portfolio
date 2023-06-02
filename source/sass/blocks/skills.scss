@@ -1,0 +1,65 @@
+.skills {
+    background-color: #1F1E1C;
+
+    &__content {
+        padding: 30px 150px;
+
+        h2 {
+            font-weight: 500;
+            font-size: 36px;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 700px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        justify-content: space-between;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        color: #a1c3cf;
+
+        svg {
+            margin-right: 10px;
+        }
+    }
+
+    &__progress-bar {
+        height: 4px;
+        width: 450px;
+        background-color: gray;
+        border-radius: 5px;
+    }
+
+    &__progress {
+        height: 4px;
+        background-color: aqua;
+
+        &--html {
+            width: 90%;
+        }
+
+        &--figma {
+            width: 90%;
+        }
+
+        &--js {
+            width: 60%;
+        }
+
+        &--react,
+        &--vue {
+            width: 15%;
+        }
+    }
+}

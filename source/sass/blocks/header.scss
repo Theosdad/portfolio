@@ -1,5 +1,16 @@
 .header {
-  background-color: #663399;
+  background: linear-gradient(180deg, rgba(100, 40, 118, 0.2) 0%, rgba(10, 242, 220, 0) 100%);
   color: #ffffff;
   padding: 10px 15px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
 }

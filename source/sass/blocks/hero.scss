@@ -1,0 +1,30 @@
+.hero {
+    &__content {
+        padding: 30px 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__description {
+        text-align: end;
+        align-self: center;
+
+        p {
+            font-size: 28px;
+            font-weight: 500;
+        }
+
+        h1,
+        h2 {
+            font-size: 36px;
+            font-weight: 500;
+        }
+
+        &:hover {
+            span {
+                color: #8e16b3;
+                filter: drop-shadow(0 0 15px #a1c3cf);
+            }
+        }
+    }
+}

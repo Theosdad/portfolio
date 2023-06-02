@@ -1,0 +1,17 @@
+.footer {
+    background: linear-gradient(0deg, rgba(100, 40, 118, 0.2) 0%, rgba(10, 242, 220, 0) 100%);;
+
+    &__container {
+        padding: 50px 120px ;
+    }
+
+    &__copyright {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+
+        svg {
+            margin-right: 10px;
+        }
+    }
+}

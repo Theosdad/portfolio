@@ -1,0 +1,38 @@
+.contacts {
+
+    &__content {
+        padding: 30px 150px;
+
+        h2 {
+            font-weight: 500;
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 720px;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+
+        svg {
+            margin-right: 20px;
+        }
+
+        &:focus,
+        &:hover {
+            color: #a1c3cf;
+            filter: drop-shadow(2px 2px 30px #ebebeb);
+        }
+    }
+}
