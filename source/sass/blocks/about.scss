@@ -2,8 +2,12 @@
     background-color: #1F1E1C;
 
     &__content {
-        padding: 30px 150px;
         display: flex;
+
+        @media(max-width: 768px) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
     }
 
     &__image {
@@ -13,9 +17,19 @@
     &__description {
         margin-right: 50px;
 
+        @media(max-width: 768px) {
+            margin: 0;
+        }
+
         h2 {
             font-weight: 500;
             font-size: 36px;
+            line-height: 30px;
+
+            @media(max-width: 768px) {
+                text-align: center;
+                font-size: 26px;
+            }
         }
     }
 }

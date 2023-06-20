@@ -1,12 +1,29 @@
 .skills {
     background-color: #1F1E1C;
 
+    &__container {
+        padding: 20px 60px;
+
+        @media(max-width: 768px) {
+            padding: 20px;
+        }
+    }
+
+
     &__content {
-        padding: 30px 150px;
 
         h2 {
+            padding-left: 60px;
             font-weight: 500;
             font-size: 36px;
+            line-height: 30px;
+
+            @media(max-width: 768px) {
+                text-align: center;
+                font-size: 26px;
+                padding: 0;
+                margin-bottom: 30px;
+            }
         }
     }
 
@@ -31,6 +48,13 @@
 
         svg {
             margin-right: 10px;
+        }
+
+        span {
+            @media(max-width: 768px) {
+                font-size: 14px;
+                width: 85px;
+            }
         }
     }
 

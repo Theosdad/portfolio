@@ -3,14 +3,69 @@
   color: #ffffff;
   padding: 10px 15px;
 
+  @media(max-width: 768px) {
+    padding: 0;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
+    position: relative;
   }
 
   &__list {
     list-style-type: none;
     padding: 0;
     margin: 0;
+  }
+
+  &__button {
+    display: none;
+    position: relative;
+    cursor: pointer;
+
+    @media(max-width: 768px) {
+      display: block;
+      width: 36px;
+      height: 36px;
+      background-color: transparent;
+      border: none;
+
+      &::after,
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background-color: #ffffff;
+        top: 6px;
+
+        transition: all 0.25s ease-in;
+      }
+
+      &::before {
+        top: 24px;
+        box-shadow: 0 -9px 0 #ffffff;
+      }
+
+      &.active {
+        &::after {
+          transform: rotate(45deg);
+          top: 45%;
+        }
+
+        &::before {
+          transform: rotate(-45deg);
+          box-shadow: none;
+          top: 45%;
+        }
+
+        &::after,
+        &::before {
+          transition: all 0.25s ease-in;
+        }
+      }
+    }
   }
 }

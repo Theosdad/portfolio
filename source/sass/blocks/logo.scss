@@ -3,4 +3,11 @@
         color: #a1c3cf;
         filter: drop-shadow(2px 2px 30px #8e16b3);
     }
+
+    svg {
+        @media(max-width: 768px) {
+            width: 36px;
+            height: 36px;
+        }
+    }
 }

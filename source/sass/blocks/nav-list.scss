@@ -2,10 +2,35 @@
     display: flex;
     align-items: center;
 
+    @media(max-width: 768px) {
+        opacity: 0;
+        pointer-events: none;
+
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: -20px;
+        width: calc(100vw + 20px);
+        background: rgba(100, 40, 118, .9);
+        transition: all .25s ease-in;
+
+        &.active {
+            opacity: 1;
+            pointer-events: all;
+            transition: all .25s ease-in;
+        }
+    }
+
+
     &__item {
-        margin-right: 30px;
-        font-size: 26px;
+        margin-right: 10px;
+        font-size: 18px;
         font-weight: 500;
+
+        @media(max-width: 768px) {
+            margin: 0;
+            padding: 15px 0;
+        }
     }
 
     &__link {

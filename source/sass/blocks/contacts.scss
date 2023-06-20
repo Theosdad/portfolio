@@ -1,12 +1,23 @@
 .contacts {
+    &__container {
+        padding: 20px;
+    }
 
     &__content {
-        padding: 30px 150px;
+        @media(max-width: 768px) {
+            display: grid;
+        }
 
         h2 {
             font-weight: 500;
             font-size: 36px;
             margin-bottom: 50px;
+
+            @media(max-width: 768px) {
+                font-size: 22px;
+                text-align: center;
+                margin-bottom: 30px;
+            }
         }
     }
 
@@ -19,14 +30,19 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 20px;
+
+        @media(max-width: 768px) {
+            grid-template-columns: 280px;
+        }
     }
 
     &__link {
         display: flex;
         align-items: center;
-
+        
         svg {
             margin-right: 20px;
+            flex-shrink: 0;
         }
 
         &:focus,
