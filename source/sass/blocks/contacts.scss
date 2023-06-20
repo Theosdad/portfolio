@@ -12,10 +12,12 @@
             font-weight: 500;
             font-size: 36px;
             margin-bottom: 50px;
+            padding-left: 100px;
 
             @media(max-width: 768px) {
                 font-size: 22px;
                 text-align: center;
+                padding: 0;
                 margin-bottom: 30px;
             }
         }
